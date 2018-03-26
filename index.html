@@ -10,6 +10,9 @@
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- reCaptcha -->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
     <!-- Custom fonts for this template -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
@@ -74,13 +77,13 @@
           <div class="col-lg-8 mx-auto">
             <h2>About Me</h2>
             <img id="profileIcon" src="img/profile-icon.jpg" alt="null"><p/>
-            <p> I'm Mark Philips. I'm 22 years old and I live in Ontario, Canada.</p>
-            <p>I'm currently doing my Bachelor's in 
+            <p class="text-left"> I'm Mark Philips. I'm 22 years old and I live in Ontario, Canada.</p>
+            <p class="text-left">I'm currently doing my Bachelor's in 
                 <a href=https://academics.sheridancollege.ca/programs/bachelor-of-applied-computer-science-mobile-computing>
                     Computer Science - Mobile Computing
                 </a> at Sheridan College.</p>
-            <p>I love taking on projects with a good challenge and the potential to help and entertain others.</p>
-            <p>I also enjoy collaborating with other individuals on larger projects, so feel free to
+            <p class="text-left">I love taking on projects with a good challenge and the potential to help and entertain others.</p>
+            <p class="text-left">I also enjoy collaborating with other individuals on larger projects, so feel free to
                 <a class="js-scroll-trigger" href="#contact">contact me</a> below for collaborative inquiries
             </p>
             <ul class="list-inline banner-social-buttons">
@@ -116,10 +119,10 @@
       <div class="container">
         <div class="col-lg-8 mx-auto">
           <h2>My Skills</h2>
-          <p>Over the course of my education at UofT and Sheridan College, 
+          <p class="text-left">Over the course of my education at UofT and Sheridan College, 
               I've picked up many skills in various programming languages and design principles.
           </p>
-          <div>
+          <div class="text-left">
               I have experience in development on:<br/>
               <ul>
                   <li>The Android Mobile Platform</li>
@@ -170,6 +173,9 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Contact Me</h2>
+            <p class="text-center">
+              You can get in touch with me 24 hours, 7 days a week!
+            </p>
             <ul class="list-inline banner-social-buttons">
                 <li class="list-inline-item">
                     <a href="https://www.linkedin.com/in/mark-philips-a778b7140" class="btn btn-default-linkedin btn-lg">
@@ -192,6 +198,35 @@
             </ul>
           </div>
         </div>
+
+        <!-- Email Form -->
+        <form class="contact-form" role="form">
+          <div class="form-group">
+            <label class="sr-only" for="name">Name</label>
+            <input id="name" class="form-control" placeholder="Name" name="name">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" class="form-control" placeholder="Email" name="email">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="subject">Subject</label>
+            <input id="subject" class="form-control" placeholder="Subject" name="subject">
+          </div>
+          <div class="form-group">
+            <label class="sr-only" for="msg">Message</label>
+            <textarea id="msg" class="form-control" placeholder="Message" name="msg" rows="3"></textarea>
+          </div>
+          <div class="pull-left">
+            <div class="g-recaptcha" data-theme="dark" data-sitekey="6LcoD08UAAAAAEsW-RZnBlWxxJtr64l2IxvlPJ4v"></div>
+          </div>
+          <div class="pull-right">
+            <button id="submit" class="btn btn-default btn-lg btn-submit" type="submit">
+              <i class="fa fa-check"></i>
+              Submit
+            </button>
+          </div>
+        </form>
       </div>
     </section>
 
@@ -212,7 +247,7 @@
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 
-    <!-- Custom scripts for this template -->
+    <!-- Custom scripts -->
     <script src="js/grayscale.min.js"></script>
 
   </body>
