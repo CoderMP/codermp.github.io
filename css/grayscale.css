@@ -195,6 +195,17 @@ a:focus, a:hover {
   background-size: cover;
 }
 
+.resume-section {
+  border-bottom: 1px solid #dee2e6;
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+}
+
+.resume-section .resume-item .resume-date {
+  min-width: none;
+}
+
+
 .repos-section {
   color: white;
   background: url("../img/repos-bg.png") no-repeat center center scroll;
@@ -284,6 +295,20 @@ a:focus, a:hover {
     border-radius: 2px;
     outline: none;
     background-color: white;
+}
+
+.list-icons {
+  font-size: 3rem;
+}
+.list-icons .list-inline-item i:hover {
+  color: #BD5D38;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Saira Extra Condensed', serif;
+  font-size: 1rem;
 }
 
 ul.banner-social-buttons {
