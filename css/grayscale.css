@@ -304,11 +304,65 @@ a:focus, a:hover {
     background-color: white;
 }
 
+.devicon-android-plain:hover, .devicon-android-plain:focus {
+  color: #A4C639;
+}
+.devicon-java-plain:hover, .devicon-java-plain:focus {
+  color: red;
+}
+.devicon-c-line:hover, .devicon-c-line:focus {
+  color: lightgreen;
+}
+.devicon-cplusplus-line:hover, .devicon-cplusplus-line:focus {
+  color: green;
+}
+.devicon-csharp-line:hover, .devicon-csharp-line:focus {
+  color: teal
+}
+.devicon-python-plain:hover, .devicon-python-plain:focus {
+  color: #FFDE57;
+}
+.devicons-mysql:hover, .devicons-mysql:focus {
+  color: lightskyblue;
+}
+.devicons-html5:hover, .devicons-html5:focus {
+  color: #E34C26;
+}
+.devicons-sass:hover, .devicons-sass:focus {
+  color: #C69;
+}
+.devicons-javascript:hover, .devicons-javascript:focus {
+  color: #F7DF1E;
+}
+.devicons-jquery:hover, .devicons-jquery:focus {
+  color: #0769AD;
+}
+.devicons-php:hover, .devicons-php:focus {
+  color: #8892BE;
+}
+.devicons-visualstudio:hover, .devicons-visualstudio:focus {
+  color: purple;
+}
+.devicon-github-plain:hover, .devicon-github-plain:focus {
+  color: black;
+  background-color: white;
+  border-radius: 45px;
+}
+.devicons-git:hover, .devicons-git:focus {
+  color: #BD2C00;
+}
+.devicons-trello:hover, .devicons-trello:focus {
+  color: #0079BF;
+}
+.devicon-slack-plain:hover, .devicon-slack-plain:focus {
+  color: #6ECADC;
+}
+
 .list-icons {
   font-size: 3rem;
 }
-.list-icons .list-inline-item i:hover {
-  color: #BD5D38;
+.list-icons .list-inline-item {
+  color: #ffffff;
 }
 
 .subheading {

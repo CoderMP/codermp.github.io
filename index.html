@@ -22,6 +22,7 @@
   <link href="css/grayscale.min.css" rel="stylesheet">
   <link href="css/grayscale.css" rel="stylesheet">
   <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+  <link href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" rel="stylesheet">
   <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
 </head>
 
@@ -127,28 +128,38 @@
           Over the course of my education at UofT and Sheridan College, I've picked up many skills in various programming languages
           and design principles.
         </p>
-        <!-- <h5>Programming Languages &amp; Tools</h5>
+        <h5>Programming Languages</h5>
         <ul class="list-inline list-icons">
-          <li class="list-inline-item">
-            <i class="devicons devicons-android"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-java"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-python"></i>
-          </li>
-          <li class="list-inline-item">
-            <i class="devicons devicons-unity_small"></i>
-          </li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Android"><i class="devicons devicon-android-plain"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Java"><i class="devicons devicon-java-plain"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="C"><i class="devicons devicon-c-line"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="C++"><i class="devicons devicon-cplusplus-line"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="C#"><i class="devicons devicon-csharp-line"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Python"><i class="devicons devicon-python-plain"></i></li>
+        </ul>
+        <ul class="list-inline list-icons">
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="MySQL"><i class="devicons devicons-mysql"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="HTML5"><i class="devicons devicons-html5"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="SASS"><i class="devicons devicons-sass"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="JavaScript"><i class="devicons devicons-javascript"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="jQuery"><i class="devicons devicons-jquery"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="bottom" title="PHP"><i class="devicons devicons-php"></i></li>
+        </ul><br/>
+        <h5>Tools</h5>
+        <ul class="list-inline list-icons">
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Visual Studio"><i class="devicons devicons-visualstudio"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="GitHub"><i class="devicons devicon-github-plain"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Git Console "><i class="devicons devicons-git"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Trello"><i class="devicons devicons-trello"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Slack"><i class="devicons devicon-slack-plain"></i></li>
         </ul>
         <h5>Workflow</h5>
         <ul class="fa-ul mb-0">
-          <li>
-            <i class="fa-li fa fa-check"></i>Mobile-First, Responsive Design</li>
-          <li>
-            <i class="fa-li fa fa-check"></i>Team Development</li>
-        </ul> -->
+          <li><i class="fa fa-check"></i>Mobile-First, Responsive Design</li>
+          <li><i class="fa fa-check"></i>Cross-Platform Testing &amp; Debugging</li>
+          <li><i class="fa fa-check"></i>Documentation Standards</li>
+          <li><i class="fa fa-check"></i>Team Development</li>
+        </ul>
         <a href="#cv" class="btn btn-circle js-scroll-trigger">
           <i class="fa fa-angle-double-down animated"></i>
         </a>
@@ -406,6 +417,13 @@
 
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(function(){
+        $('[data-toggle="tooltip"]').tooltip();
+      });
+    });
+  </script>
 </body>
 
 </html>
