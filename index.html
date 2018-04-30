@@ -81,8 +81,9 @@
         <div class="col-lg-8 mx-auto">
           <h2>About Me</h2>
           <img id="profileIcon" src="img/profile-icon.jpg" alt="null">
-          <p/>
-          <p class="text-left"> I'm Mark Philips. I'm 22 years old and I live in Ontario, Canada.</p>
+          <br/>
+          <p class="text-left">Hi there!</p>
+          <p class="text-left"> I'm Mark Philips. I'm 22 years old and I live in Toronto, Ontario, Canada.</p>
           <p class="text-left">I'm currently doing my Bachelor's in
             <a href=https://academics.sheridancollege.ca/programs/bachelor-of-applied-computer-science-mobile-computing>
               Computer Science - Mobile Computing
@@ -148,6 +149,8 @@
         <h5>Tools</h5>
         <ul class="list-inline list-icons">
           <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Visual Studio"><i class="devicons devicons-visualstudio"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Unity Engine"><i class="devicons devicons-unity_small"></i></li>
+          <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Ubuntu"><i class="devicons devicon-ubuntu-plain"></i></li>
           <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="GitHub"><i class="devicons devicon-github-plain"></i></li>
           <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Git Console "><i class="devicons devicons-git"></i></li>
           <li class="list-inline-item" data-toggle="tooltip" data-placement="top" title="Trello"><i class="devicons devicons-trello"></i></li>
@@ -242,97 +245,165 @@
 
   <!-- Repo's Section -->
   <section id="repos" class="repos-section content-section text-center">
+    <!-- Repo Container -->
     <div class="container">
-      <div class="col-lg-8 mx-auto">
-        <h2>My Repo's</h2>
-        <p>Check out my GitHub Repo's below!</p>
+      <!-- Android -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-xl-8 mb-3">
+          <div class="card bg-success">
+            <h5 class="card-header">Android Projects</h5>
+            <div id="javaCollapse" class="card-body collapse">
+              <div class="card-deck">
+                <!-- D&D -->
+                <div class="card bg-dark">
+                  <div class="card-body">
+                    <h4 class="card-title">Dungeons &amp; Dragons Companion</h4>
+                    <p class="card-text text-left">An Android app (and spiritual successor) to my desktop application of the same name</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6>
+                      <span class="badge badge-danger badge-pill">Java</span>
+                    </h6>
+                    <a class="btn btn-primary btn-sm">Go to GitHub</a>
+                  </div>
+                </div>
+                <!-- Passable -->
+                <div class="card bg-dark">
+                  <div class="card-body">
+                    <h4 class="card-title">Passable - Account Manager</h4>
+                    <p class="card-text text-left">Android app that helps users manage multiple passwords on various social media accounts</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6>
+                      <span class="badge badge-danger badge-pill">Java</span>
+                    </h6>
+                    <a class="btn btn-primary btn-sm">Go to GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="card-footer text-white" href="#javaCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="collapse">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <!-- C/C++ -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-xl-8 mb-3">
+          <div class="card bg-info">
+            <h5 class="card-header">C/C++ Projects</h5>
+            <div id="cppCollapse" class="card-body collapse">
+              <div class="card-deck">
+                <div class="card bg-dark">
+                  <div class="card-body">
+                    <h4 class="card-title">TRIE Phonebook Demo</h4>
+                    <p class="card-text text-left">A phone book console demo using a TRIE data structure</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-info" role="progressbar" style="width: 100%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6>
+                      <span class="badge badge-info badge-pill">C/C++</span>
+                    </h6>
+                    <a class="btn btn-primary btn-sm">Go to GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="card-footer text-white" href="#cppCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="collapse">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <!-- C#/XAML -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-xl-8 mb-3">
+          <div class="card bg-primary">
+            <h5 class="card-header">C#/XAML Projects</h5>
+            <div id="csharpCollapse" class="card-body collapse">
+              <div class="card-deck">
+                <div class="card bg-dark">
+                  <div class="card-body">
+                    <h4 class="card-title">Dungeons &amp; Dragons Character Manager</h4>
+                    <p class="card-text text-left">A D&amp;D character manager client for Windows 10 desktop using XAML and C#</p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6>
+                      <span class="badge badge-primary badge-pill">XAML</span>
+                      <span class="badge badge-success badge-pill">C#</span>
+                    </h6>
+                    <a class="btn btn-primary btn-sm">Go to GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="card-footer text-white" href="#csharpCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="collapse">
+              <i class="fa fa-angle-double-down animated"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col"></div>
+      </div>
+
+      <!-- Python -->
+      <div class="row">
+        <div class="col"></div>
+        <div class="col-xl-8 mb-3">
+          <div class="card bg-warning">
+            <h5 class="card-header">Python Projects</h5>
+            <div id="pythonCollapse" class="card-body collapse">
+              <div class="card-deck">
+                <!-- Password Generator -->
+                <div class="card bg-dark">
+                  <div class="card-body">
+                    <h4 class="card-title">Random Password Generator</h4>
+                    <p class="card-text text-left">An alphanumeric password generator</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6>
+                      <span class="badge badge-warning badge-pill">Python</span>
+                    </h6>
+                    <a class="btn btn-primary btn-sm">Go to GitHub</a>
+                  </div>
+                </div>
+
+                <!-- Machine Learning Script -->
+                <div class="card bg-dark">
+                  <div class="card-body">
+                    <h4 class="card-title">Logical Regressor Script</h4>
+                    <p class="card-text text-left">A single-variable regressor machine learning script</p>
+                    <div class="progress">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 100%" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h6>
+                      <span class="badge badge-warning badge-pill">Python</span>
+                    </h6>
+                    <a class="btn btn-primary btn-sm">Go to GitHub</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="card-footer text-white" href="#pythonCollapse" data-toggle="collapse" aria-expanded="false" aria-controls="collapse">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+          </div>
+        </div>
+        <div class="col"></div>
       </div>
     </div>
-    <!-- First Row of Cards-->
-    <div class="container">
-      <div class="card-deck">
-        <div class="card bg-dark">
-          <div class="card-body">
-            <h4 class="card-title">Dungeons &amp; Dragons Character Manager</h4>
-            <p class="card-text text-left">A D&amp;D character manager client for Windows 10 desktop using XAML and C#</p>
-            <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-              <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h6>
-              <span class="badge badge-primary badge-pill">XAML</span>
-              <span class="badge badge-success badge-pill">C#</span>
-            </h6>
-            <a class="btn btn-primary btn-sm">Go to GitHub</a>
-          </div>
-        </div>
-        <div class="card bg-dark">
-          <div class="card-body">
-            <h4 class="card-title">Dungeons &amp; Dragons Companion</h4>
-            <p class="card-text text-left">An Android app (and spiritual successor) to my desktop application of the same name</p>
-            <div class="progress">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h6>
-              <span class="badge badge-danger badge-pill">Java</span>
-            </h6>
-            <a class="btn btn-primary btn-sm">Go to GitHub</a>
-          </div>
-        </div>
-        <div class="card bg-dark">
-          <div class="card-body">
-            <h4 class="card-title">Passable - Account Manager</h4>
-            <p class="card-text text-left">Android app that helps users manage multiple passwords on various social media accounts</p>
-            <div class="progress">
-              <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-            <h6>
-              <span class="badge badge-danger badge-pill">Java</span>
-            </h6>
-            <a class="btn btn-primary btn-sm">Go to GitHub</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br/>
-    <!-- Second Row of Cards -->
-    <!-- <div class="container">
-        <div class="card-deck">
-          <div class="card bg-dark">
-            <div class="card-body">
-              <h4 class="card-title"></h4>
-              <p class="card-text text-left"></p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <h6></h6>
-              <a class="btn btn-primary btn-sm">Go to GitHub</a>
-            </div>
-          </div>
-          <div class="card bg-dark">
-            <div class="card-body">
-              <h4 class="card-title"></h4>
-              <p class="card-text text-left"></p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <h6></h6>
-              <a class="btn btn-primary btn-sm">Go to GitHub</a>
-            </div>
-          </div>
-          <div class="card bg-dark">
-            <div class="card-body">
-              <h4 class="card-title"></h4>
-              <p class="card-text text-left"></p>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuemin="0" aria-valuemax="100"></div>
-              </div>
-              <h6></h6>
-              <a class="btn btn-primary btn-sm">Go to GitHub</a>
-            </div>
-          </div>
-        </div>
-      </div> -->
     <div class="container">
       <a href="#contact" class="btn btn-circle js-scroll-trigger">
         <i class="fa fa-angle-double-down animated"></i>

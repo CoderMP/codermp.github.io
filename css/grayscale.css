@@ -343,6 +343,14 @@ a:focus, a:hover {
 .devicons-visualstudio:hover, .devicons-visualstudio:focus {
   color: purple;
 }
+.devicons-unity_small:hover, .devicons-unity_small:focus {
+  color: black;
+  background-color: white;
+  border-radius: 100px;
+}
+.devicon-ubuntu-plain:hover, .devicon_ubuntu-plain:focus {
+  color: #E95420;
+}
 .devicon-github-plain:hover, .devicon-github-plain:focus {
   color: black;
   background-color: white;
