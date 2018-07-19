@@ -1,14 +1,14 @@
 <?php
 // Check empty fields
-if(empty($_POST['name']) || 
-   empty($_POST['email']) || 
-   empty($_POST['subject']) || 
-   empty($_POST['message']) ||
-   !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
-   {
-       echo "No arguments provided";
-       return false;
-   }
+// if(empty($_POST['name']) || 
+//    empty($_POST['email']) || 
+//    empty($_POST['subject']) || 
+//    empty($_POST['message']) ||
+//    !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
+//    {
+//        echo "No arguments provided";
+//        return false;
+//    }
 
 //Email properties
 $name = strip_tags(htmlspecialchars($_POST['name']));
