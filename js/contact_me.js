@@ -13,10 +13,12 @@ $(function() {
                 if (response.status){
                     $("#emailForm .input").val('');
                     $("#emailForm .textarea").val('');
+                    $("#submit").html("<i class='fa fa-check'></i> Send").prop("disabled", false);
                     $("#response").addClass("text-success visible").removeClass("invisible").text("Email Sent!");
                 }
             },
             error: function(){
+                $("#submit").html("<i class='fa fa-check'></i> Send").prop("disabled", false);
                 $("#response").addClass("text-danger visible").removeClass("invisible").text("Email Failed to send!");
             }
         });
