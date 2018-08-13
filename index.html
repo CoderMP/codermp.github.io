@@ -197,20 +197,20 @@
           </li>
         </ul>
         <h5>Workflow</h5>
-        <ul class="fa-ul align-middle">
+        <ul id="workflow" class="fa-ul">
           <li class="text-left">
-            <i class="fa fa-check"></i> Mobile-First, Responsive Design</li>
+            <i class="fa fa-check"></i> Maintain mobile-first, responsive design</li>
           <li class="text-left">
-            <i class="fa fa-check"></i> Cross-Platform Testing &amp; Debugging</li>
+            <i class="fa fa-check"></i> Complete cross-platform testing &amp; debugging</li>
           <li class="text-left">
-            <i class="fa fa-check"></i> Documentation Standards</li>
+            <i class="fa fa-check"></i> Maintain documentation standards</li>
           <li class="text-left">
             <i class="fa fa-check"></i> Team Development</li>
         </ul>
-        <a href="#cv" class="btn btn-circle js-scroll-trigger">
-          <i class="fa fa-angle-double-down animated"></i>
-        </a>
       </div>
+      <a href="#cv" class="btn btn-circle js-scroll-trigger">
+        <i class="fa fa-angle-double-down animated"></i>
+      </a>
     </div>
   </section>
 
@@ -537,9 +537,9 @@
               <input id="subject" class="form-control" placeholder="Subject" name="subject" required="required" data-validation-required-message="Please a subject line.">
               <p class="text-danger"></p>
             </div>
-            <div class="pull-left">
+            <!-- <div class="pull-left">
               <div class="g-recaptcha" data-theme="dark" data-sitekey="6LcoD08UAAAAAEsW-RZnBlWxxJtr64l2IxvlPJ4v"></div>
-            </div>
+            </div> -->
           </div>
           <!-- Column 2 -->
           <div class="col-md-6">
@@ -548,13 +548,24 @@
               <textarea id="messsage" class="form-control" placeholder="Message" name="message" rows="6" required="required" data-validation-required-message="Please enter your message."></textarea>
               <p class="text-danger"></p>
             </div>
-            <div class="pull-right">
+            <!-- <div class="pull-right">
+              <button id="submit" class="btn btn-default btn-lg btn-submit" type="submit">
+                <i class="fa fa-check"></i> Submit
+              </button>
+            </div> -->
+          </div>
+          
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+              <div class="g-recaptcha" data-theme="dark" data-sitekey="6LcoD08UAAAAAEsW-RZnBlWxxJtr64l2IxvlPJ4v"></div>
+            </div>
+            <div class="col-md-6 pull-right">
               <button id="submit" class="btn btn-default btn-lg btn-submit" type="submit">
                 <i class="fa fa-check"></i> Submit
               </button>
             </div>
           </div>
-        </div>
       </form>
       <!-- Response -->
       <h5 id="response" class="invisible"></h5>
