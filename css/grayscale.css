@@ -325,6 +325,9 @@ a:focus, a:hover {
 .devicons-mysql:hover, .devicons-mysql:focus {
   color: lightskyblue;
 }
+.devicons-swift:hover, .devicons-swift:focus {
+  color: orangered;
+}
 .devicons-html5:hover, .devicons-html5:focus {
   color: #E34C26;
 }
